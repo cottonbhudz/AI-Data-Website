@@ -1,4 +1,6 @@
-make sure to download newest chrome driver
+1. sure to download newest chrome driver
+2. download same aillm this case (ollama3.1)
 if running make sure ai is in prompt
-use powershell and run command: .\AI\SCRIPTS\ACTIVATE.PS1
+if mac use and run command: ai/bin/activate
+if windows use powershell and run command: .\AI\SCRIPTS\ACTIVATE.PS1
 use to run streamlit: streamlit run c:/Users/vjchu/OneDrive/Documents/webscraper/main.py

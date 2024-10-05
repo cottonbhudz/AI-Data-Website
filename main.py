@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from scrape import (scrape_website, split_dom_content, clean_body_content, extract_body_content)
 from parse import parse_with_ollama
 
@@ -28,3 +29,17 @@ if "dom_content" in st.session_state:
             dom_chunks = split_dom_content(st.session_state.dom_content)
             parsed_result = parse_with_ollama(dom_chunks, parse_description)
             st.write(parsed_result)
+
+
+
+uploaded_file = st.file_uploader("📄 Upload File:", type={"csv", "txt"})\
+
+if uploaded_file:
+    # Check MIME type of the uploaded file
+    if uploaded_file.type == "text/csv":
+        file_results = pd.read_csv(uploaded_file)
+        st.write(file_results)
+
+    else:
+        file_results = pd.read_excel(uploaded_file)
+        st.write(file_results)
