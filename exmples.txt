@@ -1,0 +1,2 @@
+1. web scraping: https://www.viviennewestwood.com/en-us/women/jewellery/classic-styles/ **make a data frame of all jewelry items and price**
+2. 
