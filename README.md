@@ -1,4 +1,4 @@
-#All in One Data
+# All in One Data
 
 All in One Data is a developing application designed to streamline data scraping and analysis for businesses. Built for Infinite League, this AI-powered tool automates the collection of data from websites and analyzes CSV and TXT files, offering users an all-in-one solution for managing diverse data sources.
 
